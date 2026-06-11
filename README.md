@@ -69,7 +69,7 @@ run the preprocessing script to generate the modeling subsets:
 
 ```bash
 python preprocess_data.py
-
+```
 
 ### 3. Serialize Models for Dashboard
 ```bash
