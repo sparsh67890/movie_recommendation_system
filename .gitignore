@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Datasets and Processed Data
+netflix_recommender/data/raw/*
+!netflix_recommender/data/raw/.gitkeep
+
+netflix_recommender/data/processed/*
+!netflix_recommender/data/processed/.gitkeep
+
+# Models and Artifacts
+netflix_recommender/models/*
+!netflix_recommender/models/.gitkeep
