@@ -70,26 +70,13 @@ run the preprocessing script to generate the modeling subsets:
 ```bash
 python preprocess_data.py
 
-### 3. Execute Modeling Pipeline
-```bash
-jupyter nbconvert --execute --to notebook --inplace netflix_recommender/notebooks/01_exploratory_data_analysis.ipynb
-jupyter nbconvert --execute --to notebook --inplace netflix_recommender/notebooks/02_item_based_cf.ipynb
-jupyter nbconvert --execute --to notebook --inplace netflix_recommender/notebooks/03_svd.ipynb
-jupyter nbconvert --execute --to notebook --inplace netflix_recommender/notebooks/04_hybrid_recommendation.ipynb
-```
 
-### 4. Execute Evaluation
-```bash
-jupyter nbconvert --execute --to notebook --inplace netflix_recommender/notebooks/05_evaluation_metrics.ipynb
-jupyter nbconvert --execute --to notebook --inplace netflix_recommender/notebooks/06_recommendation_analysis.ipynb
-```
-
-### 5. Serialize Models for Dashboard
+### 3. Serialize Models for Dashboard
 ```bash
 python save_models.py
 ```
 
-## 9. Run the Dashboard
+## 4. Run the Dashboard
 ```bash
 streamlit run netflix_recommender/app/main.py
 ```
